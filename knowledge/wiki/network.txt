@@ -1,0 +1,108 @@
+# **Network Infrastructure of the Production System**  
+
+## **1. Overview**  
+The **network infrastructure** of the production system is designed to ensure secure, reliable, and high-performance communication between various system components. It operates within a **private IP space (192.168.1.x)** and utilizes multiple protocols, including **HTTPS, TCP, SSH, MySQL, and DNS**, for seamless connectivity. The infrastructure consists of core **network nodes**, including **web servers, load balancers, SSH gateways, database servers, and DNS servers**, each fulfilling a critical role.
+
+---
+
+## **2. Network Topology**  
+The system follows a **three-tier architecture**, comprising:  
+1. **Presentation Layer** – Web servers handling user interactions.  
+2. **Application Layer** – Load balancers distributing traffic.  
+3. **Data Layer** – Database servers managing data storage and retrieval.
+
+A **firewall** protects the system by restricting unauthorized access, while **redundant DNS and load balancing** mechanisms ensure high availability.
+
+---
+
+## **3. IP Addressing & Subnets**  
+The network infrastructure follows a structured **IP addressing scheme** with clearly defined subnets:
+
+| **Subnet** | **Range** | **Purpose** |
+|-----------|---------|-----------|
+| `192.168.1.0/24` | 192.168.1.1 - 192.168.1.255 | **Web & Application Servers** |
+| `192.168.2.0/24` | 192.168.2.1 - 192.168.2.255 | **Database & Storage Layer** |
+| `192.168.3.0/24` | 192.168.3.1 - 192.168.3.255 | **Management & Monitoring** |
+
+Each subnet isolates different system layers to **enhance security** and **reduce congestion**.
+
+---
+
+## **4. Protocols & Ports**  
+The network infrastructure relies on multiple **protocols and ports** for communication:
+
+| **Protocol** | **Port** | **Purpose** |
+|------------|------|------------|
+| **HTTPS** | 8080 | Secure web communication |
+| **TCP** | 443 | Encrypted transport layer security |
+| **SSH** | 22 | Secure remote administrative access |
+| **MySQL** | 3306 | Database connectivity |
+| **DNS** | 53 | Domain name resolution |
+
+Each protocol is **monitored and optimized** for performance, ensuring minimal latency and secure operations.
+
+---
+
+## **5. Core Network Components**  
+The infrastructure is composed of **critical network components**, each playing a role in **traffic management, security, and data processing**.
+
+### **5.1 Web Servers** (`192.168.1.1 - 192.168.1.10`)  
+- Handles **incoming HTTP/HTTPS requests**.  
+- Communicates with the **application layer** for data processing.  
+- Hosted on **high-performance virtual machines (VMs) or containers**.  
+
+### **5.2 Load Balancers** (`192.168.1.2`)  
+- Distributes client requests to backend **web and application servers**.  
+- Ensures **high availability and fault tolerance**.  
+- Uses **round-robin and least-connections algorithms**.  
+
+### **5.3 SSH Gateway** (`192.168.1.3`)  
+- Provides **secure remote access** to network administrators.  
+- Enforces **multi-factor authentication (MFA)** for security.  
+- Implements **logging and access monitoring**.  
+
+### **5.4 Database Servers** (`192.168.2.1 - 192.168.2.5`)  
+- Stores and processes application data.  
+- Uses **MySQL replication** for redundancy.  
+- Optimized for **high-performance queries and transactions**.  
+
+### **5.5 DNS Servers** (`192.168.1.5, 192.168.3.5`)  
+- Resolves **domain names to IP addresses** for system components.  
+- Supports **primary and secondary DNS failover** for reliability.  
+- Uses **DNS caching to speed up resolution times**.  
+
+---
+
+## **6. Performance Metrics**  
+### **6.1 Bandwidth Capabilities**  
+- **Web traffic:** **100Mbps - 500Mbps**.  
+- **Database transactions:** **200Mbps**.  
+- **SSH access:** **Limited to 50Mbps** to prevent congestion.  
+
+### **6.2 Latency Considerations**  
+| **Component** | **Average Latency** |
+|-------------|----------------|
+| Web Server Response | **20ms** |
+| Load Balancer Processing | **10ms** |
+| Database Query Execution | **30ms** |
+| DNS Resolution | **5ms** |
+| SSH Authentication | **10ms** |
+
+---
+
+## **7. Security & Fault Tolerance**  
+### **7.1 Firewall & Access Control**  
+- Firewalls **restrict access** to sensitive components.  
+- **Access control lists (ACLs)** define permitted connections.  
+- **DDoS protection** is enforced for external interfaces.  
+
+### **7.2 Redundancy & Failover**  
+- **Load balancers** ensure automatic rerouting of failed nodes.  
+- **MySQL replication** provides a **backup database instance**.  
+- **Secondary DNS servers** guarantee resolution continuity.  
+
+### **7.3 Monitoring & Logging**  
+- **Prometheus & Grafana** monitor network performance.  
+- **Log aggregation tools** track system access and errors.  
+- **Automated alerts** notify admins of potential failures.  
+

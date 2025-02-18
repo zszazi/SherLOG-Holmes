@@ -1,0 +1,20 @@
+draft_customer_email:
+  description: >
+    Write a customer-friendly email explaining the outage and resolution timeline.
+  expected_output: >
+    A customer email template explaining the incident. Do not include lot of technical details
+  agent: customer_support_agent
+
+customer_faq_document:
+  description: >
+    Write a customer-friendly set of frequently asked questions (FAQs) based on 
+  expected_output: >
+    A list of 20 most common questions which a customer can ask based on the failures / issues.
+  agent: customer_support_agent
+  
+human_reviewer_task:
+    description: >
+      Review the AI-generated severity report and provide corrections if needed
+    agent: human_reviewer
+    expected_output: >
+      A validated severity report with necessary corrections

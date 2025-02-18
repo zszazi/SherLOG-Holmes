@@ -1,0 +1,39 @@
+analyze_logs:
+  description: >
+    Extract relevant failure data from the logs and categorize the failure. 
+    Identify key patterns, timestamps, and affected services from logs provided.
+  expected_output: >
+    A structured summary of log analysis, highlighting failure patterns and affected services.
+  agent: technical_rca_reporter
+
+search_for_similar_failures:
+  description: >
+    Conduct an internet search using SerperDev to find information on similar failures, troubleshooting steps, and resolution strategies.
+    Provide the best search results relevant to the failure analysis.
+  expected_output: >
+    A summarized list of research findings, with relevant URLs and key takeaways.
+  agent: internet_researcher
+
+generate_technical_report:
+  description: >
+    Use the analyzed logs and research findings to generate a detailed markdown report.
+    The report should include:
+    - A root cause analysis
+    - Impact assessment
+    - Suggested mitigation strategies
+    - Graphs and charts illustrating trends and failure points.
+  expected_output: >
+    A detailed technical markdown report with visualizations on failure RCA.
+  agent: technical_rca_reporter
+
+generate_non_technical_report:
+  description: >
+    Use the analyzed logs and research findings to generate a non-technical markdown report.
+    The report should:
+    - Explain the issue in simple terms
+    - Describe the root cause
+    - Reassure that the issue is being resolved
+    - Use simple language suitable for executives or customers.
+  expected_output: >
+    A non-technical markdown report summarizing the issue and resolution in easy-to-understand language.
+  agent: non_technical_rca_reporter

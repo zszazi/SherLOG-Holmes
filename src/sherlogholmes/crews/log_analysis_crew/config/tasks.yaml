@@ -1,0 +1,33 @@
+extract_failed_jobs:
+  description: >
+    Extract all Job IDs from failed jobs within the provided JSON result. 
+    The JSON data is available in {jobid_result_json}. 
+    Ensure that only failure-related Job IDs and IPs are extracted and return them as a list of JSON jobid: "", ip: "".
+  expected_output: >
+    A list of failure Job IDs and its Associated IPs extracted from the JSON.
+  agent: job_extractor
+
+analyze_python_logs:
+  description: >
+    Identify security and network-related failures in Python logs that are associated with failed Job IDs. 
+    Use the extracted Job IDs from the "job_extractor" agent output to locate relevant log entries. 
+    Provide a structured output containing the extracted log lines in a code block format.
+  expected_output: >
+    A structured code block containing Python log entries relevant to the failed Job IDs.
+  agent: py_log_parser
+
+analyze_dns_logs:
+  description: >
+    Identify security and network-related failures in Network logs that are associated with failed IPs from analyze_python_logs agent. 
+    Use the failed IPs from the "job_extractor" agent output to locate relevant Network and Traffic log entries. 
+    Provide a structured output containing the extracted log lines in a code block format.
+  expected_output: >
+    A structured code block containing Network and Traffic log entries relevant to the failed Job IP.
+  agent: dns_log_parser
+
+aggregator_task:
+  description: > 
+    Aggregate results from all the agents
+  expected_output: >
+    A markdown of all the aggregated logs from all the agents. 
+  agent: aggregator

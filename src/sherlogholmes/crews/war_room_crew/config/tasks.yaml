@@ -1,0 +1,51 @@
+backend_issue_analysis:
+  description: >
+    Analyze backend logs to identify database timeouts, API failures, and other application-related issues.
+    Provide a structured report detailing backend failures.
+    Additionally, suggest **a minimum of 3 ways to fix the issue** through **code snippets, best practices, and optimizations**.
+    Ensure the suggestions include explanations and code examples in **Python, SQL, or relevant backend languages**. CODE EXAMPLE IS A MUST.
+  expected_output: >
+    - A structured report detailing backend failures should be title Backend Failure Analysis Report
+    - At least 3 different code-based solutions to resolve the issue
+  agent: senior_backend_engineer
+
+network_issue_analysis:
+  description: >
+    Examine network logs to detect high latency, firewall blocks, or connectivity issues.
+    Identify misconfigurations and suggest **a minimum of 3 fixes** through **network configuration commands, firewall rule changes, or performance tuning**.
+    Provide CLI commands, configuration file edits, and troubleshooting steps.
+  expected_output: >
+    - A structured report detailing network failures should be title Network Failure Analysis Report
+    - At least 3 network-level solutions using CLI commands to troubleshoot and fix. CLI COMMANDS IS A MUST. 
+  agent: senior_network_engineer
+
+architectural_review:
+  description: >
+    Assess system architecture based on log analysis, identifying potential long-term fixes and improvements.
+    Provide a high-level system impact assessment and recommendations for future architectural changes.
+  expected_output: >
+    A report on system-wide architectural concerns and recommendations for resilience.
+  agent: principal_architect
+
+business_impact_analysis:
+  description: >
+    Evaluate the impact of system failures from a business perspective.
+    Prioritize fixes based on customer impact, financial loss, and service availability.
+  expected_output: >
+    A summarized impact report outlining affected customers, priority fixes, and next steps.
+  agent: product_manager
+
+war_room_action_plan:
+  description: >
+    Gather inputs from all technical and business reports and finalize an action plan.
+    List immediate, short-term, and long-term actions for resolution and prevention.
+  expected_output: >
+    A structured War Room action plan document summarizing all findings and next steps.
+  agent: principal_architect
+
+aggregator_task:
+  description: > 
+    Aggregate results from all the agents
+  expected_output: >
+    A markdown of all the aggregated results from all the agents. 
+  agent: aggregator

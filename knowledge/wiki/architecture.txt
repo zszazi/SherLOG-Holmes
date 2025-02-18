@@ -1,0 +1,69 @@
+# **Technical Architecture of the Production System**  
+
+## **1. Overview**  
+The system logs indicate a distributed network infrastructure with multiple services interacting over various protocols. The system relies on secure communication (HTTPS, SSH), database connectivity (MySQL), and DNS resolution for name resolution. Based on the observed logs, the architecture consists of multiple nodes interacting within a network.
+
+---
+
+## **2. System Components**  
+
+### **2.1 Network Infrastructure**  
+- **IP Range:** The system primarily operates within a private IP space (`192.168.1.x`).  
+- **Protocols Used:**
+  - **HTTPS (port 8080):** Secure web communication.
+  - **TCP (port 443):** Encrypted transport layer security.
+  - **SSH (port 22):** Remote secure shell access.
+  - **MySQL (port 3306):** Database connectivity.
+  - **DNS (port 53):** Domain name resolution.
+- **Bandwidth Capabilities:** Varying from **100Mbps to 500Mbps** across services.
+- **Latency Considerations:** Ranges between **5ms to 50ms** based on network conditions.
+
+### **2.2 Core System Nodes**  
+| **IP Address** | **Service** | **Protocol/Port** | **Purpose** |
+|---------------|------------|------------------|------------|
+| 192.168.1.1   | Web Server | HTTPS (8080)     | Handles secure web traffic |
+| 192.168.1.2   | Load Balancer | TCP (443)       | Distributes traffic across backend servers |
+| 192.168.1.3   | SSH Gateway | SSH (22)        | Provides administrative access |
+| 192.168.1.4   | Database Server | MySQL (3306) | Stores and processes application data |
+| 192.168.1.5   | DNS Server | DNS (53)        | Resolves domain names to IP addresses |
+
+---
+
+## **3. Communication Flow & Data Flow**  
+
+### **3.1 Web Traffic Flow (HTTPS - 192.168.1.1)**
+- Clients establish an **HTTPS connection** to the web server.
+- The web server communicates with backend services (DB, APIs).
+- Typical latency observed: **20ms**.
+- Bandwidth utilization: **100Mbps**.
+
+### **3.2 Secure Administrative Access (SSH - 192.168.1.3)**
+- SSH connections allow administrators to securely access the infrastructure.
+- Authentication completes within **10ms**.
+- Bandwidth observed: **200Mbps**.
+- Ensures secure management of infrastructure.
+
+### **3.3 Load Balancer and Secure API Communication (TCP - 192.168.1.2)**
+- The load balancer distributes client requests to backend services.
+- Network congestion may cause high latency (**50ms observed**).
+- Connection failures indicate possible misconfigurations or hardware failures.
+
+### **3.4 Database Connectivity (MySQL - 192.168.1.4)**
+- Applications interact with the database using **MySQL (port 3306)**.
+- Firewall rules or network issues may cause **connection failures**.
+- Slow response detected (**30ms latency**) suggests potential query optimization needs or DB overload.
+
+### **3.5 DNS Resolution (DNS - 192.168.1.5)**
+- DNS queries resolve domain names for application services.
+- Fast response time (**5ms**) indicates an optimized DNS setup.
+- High bandwidth (**500Mbps**) supports efficient name resolution for the system.
+
+---
+
+## **4. Scalability & Resilience Recommendations**  
+1. **Load Balancer Redundancy:** Deploy multiple load balancers with automatic failover.  
+2. **Database Replication:** Implement MySQL replication for high availability.  
+3. **Auto-scaling Web Servers:** Use containerized web servers for dynamic scaling.  
+4. **Optimized Routing:** Introduce SD-WAN or intelligent traffic routing to minimize latency.  
+5. **DNS Failover:** Deploy secondary DNS servers for better name resolution redundancy.  
+6. **Log Monitoring & Alerting:** Implement real-time monitoring using Prometheus & Grafana.  

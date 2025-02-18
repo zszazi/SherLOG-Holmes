@@ -1,0 +1,336 @@
+2025-02-10 16:30:34 - ERROR - Job M4N5O6 failed after 394 seconds. Network: {'ipAddress': '192.168.1.5', 'port': 53, 'protocol': 'DNS', 'latency': '5ms', 'bandwidth': '500Mbps'}
+2025-02-10 16:30:34 - DEBUG - Job M4N5O6: Checking network status - IP: 192.168.1.5, Latency: 5ms
+2025-02-10 16:30:34 - INFO - Job M4N5O6 completed successfully in 445 seconds. Network: {'ipAddress': '192.168.1.5', 'port': 53, 'protocol': 'DNS', 'latency': '5ms', 'bandwidth': '500Mbps'}
+2025-02-10 16:30:34 - DEBUG - Job M4N5O6: Checking network status - IP: 192.168.1.5, Latency: 5ms
+2025-02-10 16:30:34 - INFO - Job J1K2L3 completed successfully in 239 seconds. Network: {'ipAddress': '192.168.1.4', 'port': 3306, 'protocol': 'MySQL', 'latency': '30ms', 'bandwidth': '300Mbps'}
+2025-02-10 16:30:34 - DEBUG - Job J1K2L3: Checking network status - IP: 192.168.1.4, Latency: 30ms
+2025-02-10 16:30:34 - INFO - Job A1B2C3 completed successfully in 270 seconds. Network: {'ipAddress': '192.168.1.1', 'port': 8080, 'protocol': 'HTTPS', 'latency': '20ms', 'bandwidth': '100Mbps'}
+2025-02-10 16:30:34 - DEBUG - Job A1B2C3: Checking network status - IP: 192.168.1.1, Latency: 20ms
+2025-02-10 16:30:34 - ERROR - Job A1B2C3 failed after 103 seconds. Network: {'ipAddress': '192.168.1.1', 'port': 8080, 'protocol': 'HTTPS', 'latency': '20ms', 'bandwidth': '100Mbps'}
+2025-02-10 16:30:34 - DEBUG - Job A1B2C3: Checking network status - IP: 192.168.1.1, Latency: 20ms
+2025-02-10 16:30:34 - ERROR - Job A1B2C3 failed after 299 seconds. Network: {'ipAddress': '192.168.1.1', 'port': 8080, 'protocol': 'HTTPS', 'latency': '20ms', 'bandwidth': '100Mbps'}
+2025-02-10 16:30:34 - DEBUG - Job A1B2C3: Checking network status - IP: 192.168.1.1, Latency: 20ms
+2025-02-10 16:30:34 - ERROR - Job G7H8I9 failed after 475 seconds. Network: {'ipAddress': '192.168.1.3', 'port': 22, 'protocol': 'SSH', 'latency': '10ms', 'bandwidth': '200Mbps'}
+2025-02-10 16:30:34 - DEBUG - Job G7H8I9: Checking network status - IP: 192.168.1.3, Latency: 10ms
+2025-02-10 16:30:34 - INFO - Job D4E5F6 completed successfully in 107 seconds. Network: {'ipAddress': '192.168.1.2', 'port': 443, 'protocol': 'TCP', 'latency': '50ms', 'bandwidth': '50Mbps'}
+2025-02-10 16:30:34 - DEBUG - Job D4E5F6: Checking network status - IP: 192.168.1.2, Latency: 50ms
+2025-02-10 16:30:34 - ERROR - Job D4E5F6 failed after 258 seconds. Network: {'ipAddress': '192.168.1.2', 'port': 443, 'protocol': 'TCP', 'latency': '50ms', 'bandwidth': '50Mbps'}
+2025-02-10 16:30:34 - DEBUG - Job D4E5F6: Checking network status - IP: 192.168.1.2, Latency: 50ms
+2025-02-10 16:30:34 - ERROR - Job D4E5F6 failed after 316 seconds. Network: {'ipAddress': '192.168.1.2', 'port': 443, 'protocol': 'TCP', 'latency': '50ms', 'bandwidth': '50Mbps'}
+2025-02-10 16:30:34 - DEBUG - Job D4E5F6: Checking network status - IP: 192.168.1.2, Latency: 50ms
+2025-02-10 16:30:34 - ERROR - Job J1K2L3 failed after 367 seconds. Network: {'ipAddress': '192.168.1.4', 'port': 3306, 'protocol': 'MySQL', 'latency': '30ms', 'bandwidth': '300Mbps'}
+2025-02-10 16:30:34 - DEBUG - Job J1K2L3: Checking network status - IP: 192.168.1.4, Latency: 30ms
+2025-02-10 16:30:34 - INFO - Job M4N5O6 completed successfully in 395 seconds. Network: {'ipAddress': '192.168.1.5', 'port': 53, 'protocol': 'DNS', 'latency': '5ms', 'bandwidth': '500Mbps'}
+2025-02-10 16:30:34 - DEBUG - Job M4N5O6: Checking network status - IP: 192.168.1.5, Latency: 5ms
+2025-02-10 16:30:34 - ERROR - Job A1B2C3 failed after 318 seconds. Network: {'ipAddress': '192.168.1.1', 'port': 8080, 'protocol': 'HTTPS', 'latency': '20ms', 'bandwidth': '100Mbps'}
+2025-02-10 16:30:34 - DEBUG - Job A1B2C3: Checking network status - IP: 192.168.1.1, Latency: 20ms
+2025-02-10 16:30:34 - ERROR - Job J1K2L3 failed after 383 seconds. Network: {'ipAddress': '192.168.1.4', 'port': 3306, 'protocol': 'MySQL', 'latency': '30ms', 'bandwidth': '300Mbps'}
+2025-02-10 16:30:34 - DEBUG - Job J1K2L3: Checking network status - IP: 192.168.1.4, Latency: 30ms
+2025-02-10 16:30:34 - ERROR - Job G7H8I9 failed after 353 seconds. Network: {'ipAddress': '192.168.1.3', 'port': 22, 'protocol': 'SSH', 'latency': '10ms', 'bandwidth': '200Mbps'}
+2025-02-10 16:30:34 - DEBUG - Job G7H8I9: Checking network status - IP: 192.168.1.3, Latency: 10ms
+2025-02-10 16:30:34 - INFO - Job D4E5F6 completed successfully in 256 seconds. Network: {'ipAddress': '192.168.1.2', 'port': 443, 'protocol': 'TCP', 'latency': '50ms', 'bandwidth': '50Mbps'}
+2025-02-10 16:30:34 - DEBUG - Job D4E5F6: Checking network status - IP: 192.168.1.2, Latency: 50ms
+2025-02-10 16:30:34 - ERROR - Job M4N5O6 failed after 356 seconds. Network: {'ipAddress': '192.168.1.5', 'port': 53, 'protocol': 'DNS', 'latency': '5ms', 'bandwidth': '500Mbps'}
+2025-02-10 16:30:34 - DEBUG - Job M4N5O6: Checking network status - IP: 192.168.1.5, Latency: 5ms
+2025-02-10 16:30:34 - ERROR - Job M4N5O6 failed after 136 seconds. Network: {'ipAddress': '192.168.1.5', 'port': 53, 'protocol': 'DNS', 'latency': '5ms', 'bandwidth': '500Mbps'}
+2025-02-10 16:30:34 - DEBUG - Job M4N5O6: Checking network status - IP: 192.168.1.5, Latency: 5ms
+2025-02-10 16:30:34 - INFO - Job A1B2C3 completed successfully in 452 seconds. Network: {'ipAddress': '192.168.1.1', 'port': 8080, 'protocol': 'HTTPS', 'latency': '20ms', 'bandwidth': '100Mbps'}
+2025-02-10 16:30:34 - DEBUG - Job A1B2C3: Checking network status - IP: 192.168.1.1, Latency: 20ms
+2025-02-10 16:30:34 - ERROR - Job D4E5F6 failed after 252 seconds. Network: {'ipAddress': '192.168.1.2', 'port': 443, 'protocol': 'TCP', 'latency': '50ms', 'bandwidth': '50Mbps'}
+2025-02-10 16:30:34 - DEBUG - Job D4E5F6: Checking network status - IP: 192.168.1.2, Latency: 50ms
+2025-02-10 16:30:34 - INFO - Job M4N5O6 completed successfully in 229 seconds. Network: {'ipAddress': '192.168.1.5', 'port': 53, 'protocol': 'DNS', 'latency': '5ms', 'bandwidth': '500Mbps'}
+2025-02-10 16:30:34 - DEBUG - Job M4N5O6: Checking network status - IP: 192.168.1.5, Latency: 5ms
+2025-02-10 16:30:34 - INFO - Job D4E5F6 completed successfully in 388 seconds. Network: {'ipAddress': '192.168.1.2', 'port': 443, 'protocol': 'TCP', 'latency': '50ms', 'bandwidth': '50Mbps'}
+2025-02-10 16:30:34 - DEBUG - Job D4E5F6: Checking network status - IP: 192.168.1.2, Latency: 50ms
+2025-02-10 16:30:34 - INFO - Job A1B2C3 completed successfully in 463 seconds. Network: {'ipAddress': '192.168.1.1', 'port': 8080, 'protocol': 'HTTPS', 'latency': '20ms', 'bandwidth': '100Mbps'}
+2025-02-10 16:30:34 - DEBUG - Job A1B2C3: Checking network status - IP: 192.168.1.1, Latency: 20ms
+2025-02-10 16:30:34 - INFO - Job A1B2C3 completed successfully in 343 seconds. Network: {'ipAddress': '192.168.1.1', 'port': 8080, 'protocol': 'HTTPS', 'latency': '20ms', 'bandwidth': '100Mbps'}
+2025-02-10 16:30:34 - DEBUG - Job A1B2C3: Checking network status - IP: 192.168.1.1, Latency: 20ms
+2025-02-10 16:30:34 - INFO - Job M4N5O6 completed successfully in 368 seconds. Network: {'ipAddress': '192.168.1.5', 'port': 53, 'protocol': 'DNS', 'latency': '5ms', 'bandwidth': '500Mbps'}
+2025-02-10 16:30:34 - DEBUG - Job M4N5O6: Checking network status - IP: 192.168.1.5, Latency: 5ms
+2025-02-10 16:30:34 - INFO - Job M4N5O6 completed successfully in 500 seconds. Network: {'ipAddress': '192.168.1.5', 'port': 53, 'protocol': 'DNS', 'latency': '5ms', 'bandwidth': '500Mbps'}
+2025-02-10 16:30:34 - DEBUG - Job M4N5O6: Checking network status - IP: 192.168.1.5, Latency: 5ms
+2025-02-10 16:30:34 - ERROR - Job J1K2L3 failed after 108 seconds. Network: {'ipAddress': '192.168.1.4', 'port': 3306, 'protocol': 'MySQL', 'latency': '30ms', 'bandwidth': '300Mbps'}
+2025-02-10 16:30:34 - DEBUG - Job J1K2L3: Checking network status - IP: 192.168.1.4, Latency: 30ms
+2025-02-10 16:30:34 - ERROR - Job A1B2C3 failed after 342 seconds. Network: {'ipAddress': '192.168.1.1', 'port': 8080, 'protocol': 'HTTPS', 'latency': '20ms', 'bandwidth': '100Mbps'}
+2025-02-10 16:30:34 - DEBUG - Job A1B2C3: Checking network status - IP: 192.168.1.1, Latency: 20ms
+2025-02-10 16:30:34 - INFO - Job G7H8I9 completed successfully in 398 seconds. Network: {'ipAddress': '192.168.1.3', 'port': 22, 'protocol': 'SSH', 'latency': '10ms', 'bandwidth': '200Mbps'}
+2025-02-10 16:30:34 - DEBUG - Job G7H8I9: Checking network status - IP: 192.168.1.3, Latency: 10ms
+2025-02-10 16:30:34 - ERROR - Job G7H8I9 failed after 353 seconds. Network: {'ipAddress': '192.168.1.3', 'port': 22, 'protocol': 'SSH', 'latency': '10ms', 'bandwidth': '200Mbps'}
+2025-02-10 16:30:34 - DEBUG - Job G7H8I9: Checking network status - IP: 192.168.1.3, Latency: 10ms
+2025-02-10 16:30:35 - INFO - Job A1B2C3 completed successfully in 105 seconds. Network: {'ipAddress': '192.168.1.1', 'port': 8080, 'protocol': 'HTTPS', 'latency': '20ms', 'bandwidth': '100Mbps'}
+2025-02-10 16:30:35 - DEBUG - Job A1B2C3: Checking network status - IP: 192.168.1.1, Latency: 20ms
+2025-02-10 16:30:35 - INFO - Job D4E5F6 completed successfully in 189 seconds. Network: {'ipAddress': '192.168.1.2', 'port': 443, 'protocol': 'TCP', 'latency': '50ms', 'bandwidth': '50Mbps'}
+2025-02-10 16:30:35 - DEBUG - Job D4E5F6: Checking network status - IP: 192.168.1.2, Latency: 50ms
+2025-02-10 16:30:35 - ERROR - Job D4E5F6 failed after 207 seconds. Network: {'ipAddress': '192.168.1.2', 'port': 443, 'protocol': 'TCP', 'latency': '50ms', 'bandwidth': '50Mbps'}
+2025-02-10 16:30:35 - DEBUG - Job D4E5F6: Checking network status - IP: 192.168.1.2, Latency: 50ms
+2025-02-10 16:30:35 - ERROR - Job D4E5F6 failed after 388 seconds. Network: {'ipAddress': '192.168.1.2', 'port': 443, 'protocol': 'TCP', 'latency': '50ms', 'bandwidth': '50Mbps'}
+2025-02-10 16:30:35 - DEBUG - Job D4E5F6: Checking network status - IP: 192.168.1.2, Latency: 50ms
+2025-02-10 16:30:35 - INFO - Job M4N5O6 completed successfully in 453 seconds. Network: {'ipAddress': '192.168.1.5', 'port': 53, 'protocol': 'DNS', 'latency': '5ms', 'bandwidth': '500Mbps'}
+2025-02-10 16:30:35 - DEBUG - Job M4N5O6: Checking network status - IP: 192.168.1.5, Latency: 5ms
+2025-02-10 16:30:35 - INFO - Job A1B2C3 completed successfully in 386 seconds. Network: {'ipAddress': '192.168.1.1', 'port': 8080, 'protocol': 'HTTPS', 'latency': '20ms', 'bandwidth': '100Mbps'}
+2025-02-10 16:30:35 - DEBUG - Job A1B2C3: Checking network status - IP: 192.168.1.1, Latency: 20ms
+2025-02-10 16:30:35 - ERROR - Job J1K2L3 failed after 292 seconds. Network: {'ipAddress': '192.168.1.4', 'port': 3306, 'protocol': 'MySQL', 'latency': '30ms', 'bandwidth': '300Mbps'}
+2025-02-10 16:30:35 - DEBUG - Job J1K2L3: Checking network status - IP: 192.168.1.4, Latency: 30ms
+2025-02-10 16:30:35 - INFO - Job M4N5O6 completed successfully in 368 seconds. Network: {'ipAddress': '192.168.1.5', 'port': 53, 'protocol': 'DNS', 'latency': '5ms', 'bandwidth': '500Mbps'}
+2025-02-10 16:30:35 - DEBUG - Job M4N5O6: Checking network status - IP: 192.168.1.5, Latency: 5ms
+2025-02-10 16:30:35 - INFO - Job D4E5F6 completed successfully in 491 seconds. Network: {'ipAddress': '192.168.1.2', 'port': 443, 'protocol': 'TCP', 'latency': '50ms', 'bandwidth': '50Mbps'}
+2025-02-10 16:30:35 - DEBUG - Job D4E5F6: Checking network status - IP: 192.168.1.2, Latency: 50ms
+2025-02-10 16:30:35 - ERROR - Job A1B2C3 failed after 206 seconds. Network: {'ipAddress': '192.168.1.1', 'port': 8080, 'protocol': 'HTTPS', 'latency': '20ms', 'bandwidth': '100Mbps'}
+2025-02-10 16:30:35 - DEBUG - Job A1B2C3: Checking network status - IP: 192.168.1.1, Latency: 20ms
+2025-02-10 16:30:35 - ERROR - Job M4N5O6 failed after 471 seconds. Network: {'ipAddress': '192.168.1.5', 'port': 53, 'protocol': 'DNS', 'latency': '5ms', 'bandwidth': '500Mbps'}
+2025-02-10 16:30:35 - DEBUG - Job M4N5O6: Checking network status - IP: 192.168.1.5, Latency: 5ms
+2025-02-10 16:30:35 - ERROR - Job A1B2C3 failed after 306 seconds. Network: {'ipAddress': '192.168.1.1', 'port': 8080, 'protocol': 'HTTPS', 'latency': '20ms', 'bandwidth': '100Mbps'}
+2025-02-10 16:30:35 - DEBUG - Job A1B2C3: Checking network status - IP: 192.168.1.1, Latency: 20ms
+2025-02-10 16:30:35 - ERROR - Job M4N5O6 failed after 229 seconds. Network: {'ipAddress': '192.168.1.5', 'port': 53, 'protocol': 'DNS', 'latency': '5ms', 'bandwidth': '500Mbps'}
+2025-02-10 16:30:35 - DEBUG - Job M4N5O6: Checking network status - IP: 192.168.1.5, Latency: 5ms
+2025-02-10 16:30:35 - INFO - Job G7H8I9 completed successfully in 347 seconds. Network: {'ipAddress': '192.168.1.3', 'port': 22, 'protocol': 'SSH', 'latency': '10ms', 'bandwidth': '200Mbps'}
+2025-02-10 16:30:35 - DEBUG - Job G7H8I9: Checking network status - IP: 192.168.1.3, Latency: 10ms
+2025-02-10 16:30:35 - INFO - Job D4E5F6 completed successfully in 303 seconds. Network: {'ipAddress': '192.168.1.2', 'port': 443, 'protocol': 'TCP', 'latency': '50ms', 'bandwidth': '50Mbps'}
+2025-02-10 16:30:35 - DEBUG - Job D4E5F6: Checking network status - IP: 192.168.1.2, Latency: 50ms
+2025-02-10 16:30:35 - INFO - Job D4E5F6 completed successfully in 278 seconds. Network: {'ipAddress': '192.168.1.2', 'port': 443, 'protocol': 'TCP', 'latency': '50ms', 'bandwidth': '50Mbps'}
+2025-02-10 16:30:35 - DEBUG - Job D4E5F6: Checking network status - IP: 192.168.1.2, Latency: 50ms
+2025-02-10 16:30:35 - INFO - Job A1B2C3 completed successfully in 135 seconds. Network: {'ipAddress': '192.168.1.1', 'port': 8080, 'protocol': 'HTTPS', 'latency': '20ms', 'bandwidth': '100Mbps'}
+2025-02-10 16:30:35 - DEBUG - Job A1B2C3: Checking network status - IP: 192.168.1.1, Latency: 20ms
+2025-02-10 16:30:35 - INFO - Job J1K2L3 completed successfully in 485 seconds. Network: {'ipAddress': '192.168.1.4', 'port': 3306, 'protocol': 'MySQL', 'latency': '30ms', 'bandwidth': '300Mbps'}
+2025-02-10 16:30:35 - DEBUG - Job J1K2L3: Checking network status - IP: 192.168.1.4, Latency: 30ms
+2025-02-10 16:30:35 - ERROR - Job G7H8I9 failed after 193 seconds. Network: {'ipAddress': '192.168.1.3', 'port': 22, 'protocol': 'SSH', 'latency': '10ms', 'bandwidth': '200Mbps'}
+2025-02-10 16:30:35 - DEBUG - Job G7H8I9: Checking network status - IP: 192.168.1.3, Latency: 10ms
+2025-02-10 16:30:35 - ERROR - Job A1B2C3 failed after 154 seconds. Network: {'ipAddress': '192.168.1.1', 'port': 8080, 'protocol': 'HTTPS', 'latency': '20ms', 'bandwidth': '100Mbps'}
+2025-02-10 16:30:35 - DEBUG - Job A1B2C3: Checking network status - IP: 192.168.1.1, Latency: 20ms
+2025-02-10 16:30:35 - INFO - Job M4N5O6 completed successfully in 465 seconds. Network: {'ipAddress': '192.168.1.5', 'port': 53, 'protocol': 'DNS', 'latency': '5ms', 'bandwidth': '500Mbps'}
+2025-02-10 16:30:35 - DEBUG - Job M4N5O6: Checking network status - IP: 192.168.1.5, Latency: 5ms
+2025-02-10 16:30:35 - ERROR - Job J1K2L3 failed after 208 seconds. Network: {'ipAddress': '192.168.1.4', 'port': 3306, 'protocol': 'MySQL', 'latency': '30ms', 'bandwidth': '300Mbps'}
+2025-02-10 16:30:35 - DEBUG - Job J1K2L3: Checking network status - IP: 192.168.1.4, Latency: 30ms
+2025-02-10 16:30:35 - INFO - Job M4N5O6 completed successfully in 461 seconds. Network: {'ipAddress': '192.168.1.5', 'port': 53, 'protocol': 'DNS', 'latency': '5ms', 'bandwidth': '500Mbps'}
+2025-02-10 16:30:35 - DEBUG - Job M4N5O6: Checking network status - IP: 192.168.1.5, Latency: 5ms
+2025-02-10 16:30:35 - ERROR - Job A1B2C3 failed after 157 seconds. Network: {'ipAddress': '192.168.1.1', 'port': 8080, 'protocol': 'HTTPS', 'latency': '20ms', 'bandwidth': '100Mbps'}
+2025-02-10 16:30:35 - DEBUG - Job A1B2C3: Checking network status - IP: 192.168.1.1, Latency: 20ms
+2025-02-10 16:30:35 - INFO - Job D4E5F6 completed successfully in 324 seconds. Network: {'ipAddress': '192.168.1.2', 'port': 443, 'protocol': 'TCP', 'latency': '50ms', 'bandwidth': '50Mbps'}
+2025-02-10 16:30:35 - DEBUG - Job D4E5F6: Checking network status - IP: 192.168.1.2, Latency: 50ms
+2025-02-10 16:30:35 - INFO - Job J1K2L3 completed successfully in 447 seconds. Network: {'ipAddress': '192.168.1.4', 'port': 3306, 'protocol': 'MySQL', 'latency': '30ms', 'bandwidth': '300Mbps'}
+2025-02-10 16:30:35 - DEBUG - Job J1K2L3: Checking network status - IP: 192.168.1.4, Latency: 30ms
+2025-02-10 16:30:35 - ERROR - Job D4E5F6 failed after 450 seconds. Network: {'ipAddress': '192.168.1.2', 'port': 443, 'protocol': 'TCP', 'latency': '50ms', 'bandwidth': '50Mbps'}
+2025-02-10 16:30:35 - DEBUG - Job D4E5F6: Checking network status - IP: 192.168.1.2, Latency: 50ms
+2025-02-10 16:30:35 - ERROR - Job D4E5F6 failed after 226 seconds. Network: {'ipAddress': '192.168.1.2', 'port': 443, 'protocol': 'TCP', 'latency': '50ms', 'bandwidth': '50Mbps'}
+2025-02-10 16:30:35 - DEBUG - Job D4E5F6: Checking network status - IP: 192.168.1.2, Latency: 50ms
+2025-02-10 16:30:35 - INFO - Job M4N5O6 completed successfully in 329 seconds. Network: {'ipAddress': '192.168.1.5', 'port': 53, 'protocol': 'DNS', 'latency': '5ms', 'bandwidth': '500Mbps'}
+2025-02-10 16:30:35 - DEBUG - Job M4N5O6: Checking network status - IP: 192.168.1.5, Latency: 5ms
+2025-02-10 16:30:35 - ERROR - Job G7H8I9 failed after 392 seconds. Network: {'ipAddress': '192.168.1.3', 'port': 22, 'protocol': 'SSH', 'latency': '10ms', 'bandwidth': '200Mbps'}
+2025-02-10 16:30:35 - DEBUG - Job G7H8I9: Checking network status - IP: 192.168.1.3, Latency: 10ms
+2025-02-10 16:30:35 - ERROR - Job M4N5O6 failed after 334 seconds. Network: {'ipAddress': '192.168.1.5', 'port': 53, 'protocol': 'DNS', 'latency': '5ms', 'bandwidth': '500Mbps'}
+2025-02-10 16:30:35 - DEBUG - Job M4N5O6: Checking network status - IP: 192.168.1.5, Latency: 5ms
+2025-02-10 16:30:35 - INFO - Job D4E5F6 completed successfully in 476 seconds. Network: {'ipAddress': '192.168.1.2', 'port': 443, 'protocol': 'TCP', 'latency': '50ms', 'bandwidth': '50Mbps'}
+2025-02-10 16:30:35 - DEBUG - Job D4E5F6: Checking network status - IP: 192.168.1.2, Latency: 50ms
+2025-02-10 16:30:35 - INFO - Job D4E5F6 completed successfully in 221 seconds. Network: {'ipAddress': '192.168.1.2', 'port': 443, 'protocol': 'TCP', 'latency': '50ms', 'bandwidth': '50Mbps'}
+2025-02-10 16:30:35 - DEBUG - Job D4E5F6: Checking network status - IP: 192.168.1.2, Latency: 50ms
+2025-02-10 16:30:35 - INFO - Job M4N5O6 completed successfully in 326 seconds. Network: {'ipAddress': '192.168.1.5', 'port': 53, 'protocol': 'DNS', 'latency': '5ms', 'bandwidth': '500Mbps'}
+2025-02-10 16:30:35 - DEBUG - Job M4N5O6: Checking network status - IP: 192.168.1.5, Latency: 5ms
+2025-02-10 16:30:35 - INFO - Job M4N5O6 completed successfully in 311 seconds. Network: {'ipAddress': '192.168.1.5', 'port': 53, 'protocol': 'DNS', 'latency': '5ms', 'bandwidth': '500Mbps'}
+2025-02-10 16:30:35 - DEBUG - Job M4N5O6: Checking network status - IP: 192.168.1.5, Latency: 5ms
+2025-02-10 16:30:35 - INFO - Job J1K2L3 completed successfully in 241 seconds. Network: {'ipAddress': '192.168.1.4', 'port': 3306, 'protocol': 'MySQL', 'latency': '30ms', 'bandwidth': '300Mbps'}
+2025-02-10 16:30:35 - DEBUG - Job J1K2L3: Checking network status - IP: 192.168.1.4, Latency: 30ms
+2025-02-10 16:30:35 - ERROR - Job M4N5O6 failed after 218 seconds. Network: {'ipAddress': '192.168.1.5', 'port': 53, 'protocol': 'DNS', 'latency': '5ms', 'bandwidth': '500Mbps'}
+2025-02-10 16:30:35 - DEBUG - Job M4N5O6: Checking network status - IP: 192.168.1.5, Latency: 5ms
+2025-02-10 16:30:35 - INFO - Job M4N5O6 completed successfully in 368 seconds. Network: {'ipAddress': '192.168.1.5', 'port': 53, 'protocol': 'DNS', 'latency': '5ms', 'bandwidth': '500Mbps'}
+2025-02-10 16:30:35 - DEBUG - Job M4N5O6: Checking network status - IP: 192.168.1.5, Latency: 5ms
+2025-02-10 16:30:35 - ERROR - Job D4E5F6 failed after 216 seconds. Network: {'ipAddress': '192.168.1.2', 'port': 443, 'protocol': 'TCP', 'latency': '50ms', 'bandwidth': '50Mbps'}
+2025-02-10 16:30:35 - DEBUG - Job D4E5F6: Checking network status - IP: 192.168.1.2, Latency: 50ms
+2025-02-10 16:30:35 - INFO - Job A1B2C3 completed successfully in 464 seconds. Network: {'ipAddress': '192.168.1.1', 'port': 8080, 'protocol': 'HTTPS', 'latency': '20ms', 'bandwidth': '100Mbps'}
+2025-02-10 16:30:35 - DEBUG - Job A1B2C3: Checking network status - IP: 192.168.1.1, Latency: 20ms
+2025-02-10 16:30:35 - ERROR - Job D4E5F6 failed after 372 seconds. Network: {'ipAddress': '192.168.1.2', 'port': 443, 'protocol': 'TCP', 'latency': '50ms', 'bandwidth': '50Mbps'}
+2025-02-10 16:30:35 - DEBUG - Job D4E5F6: Checking network status - IP: 192.168.1.2, Latency: 50ms
+2025-02-10 16:30:35 - INFO - Job A1B2C3 completed successfully in 477 seconds. Network: {'ipAddress': '192.168.1.1', 'port': 8080, 'protocol': 'HTTPS', 'latency': '20ms', 'bandwidth': '100Mbps'}
+2025-02-10 16:30:35 - DEBUG - Job A1B2C3: Checking network status - IP: 192.168.1.1, Latency: 20ms
+2025-02-10 16:30:35 - ERROR - Job M4N5O6 failed after 127 seconds. Network: {'ipAddress': '192.168.1.5', 'port': 53, 'protocol': 'DNS', 'latency': '5ms', 'bandwidth': '500Mbps'}
+2025-02-10 16:30:35 - DEBUG - Job M4N5O6: Checking network status - IP: 192.168.1.5, Latency: 5ms
+2025-02-10 16:30:35 - ERROR - Job A1B2C3 failed after 468 seconds. Network: {'ipAddress': '192.168.1.1', 'port': 8080, 'protocol': 'HTTPS', 'latency': '20ms', 'bandwidth': '100Mbps'}
+2025-02-10 16:30:35 - DEBUG - Job A1B2C3: Checking network status - IP: 192.168.1.1, Latency: 20ms
+2025-02-10 16:30:35 - INFO - Job D4E5F6 completed successfully in 312 seconds. Network: {'ipAddress': '192.168.1.2', 'port': 443, 'protocol': 'TCP', 'latency': '50ms', 'bandwidth': '50Mbps'}
+2025-02-10 16:30:35 - DEBUG - Job D4E5F6: Checking network status - IP: 192.168.1.2, Latency: 50ms
+2025-02-10 16:30:35 - INFO - Job M4N5O6 completed successfully in 274 seconds. Network: {'ipAddress': '192.168.1.5', 'port': 53, 'protocol': 'DNS', 'latency': '5ms', 'bandwidth': '500Mbps'}
+2025-02-10 16:30:35 - DEBUG - Job M4N5O6: Checking network status - IP: 192.168.1.5, Latency: 5ms
+2025-02-10 16:30:35 - INFO - Job D4E5F6 completed successfully in 207 seconds. Network: {'ipAddress': '192.168.1.2', 'port': 443, 'protocol': 'TCP', 'latency': '50ms', 'bandwidth': '50Mbps'}
+2025-02-10 16:30:35 - DEBUG - Job D4E5F6: Checking network status - IP: 192.168.1.2, Latency: 50ms
+2025-02-10 16:30:35 - INFO - Job M4N5O6 completed successfully in 327 seconds. Network: {'ipAddress': '192.168.1.5', 'port': 53, 'protocol': 'DNS', 'latency': '5ms', 'bandwidth': '500Mbps'}
+2025-02-10 16:30:35 - DEBUG - Job M4N5O6: Checking network status - IP: 192.168.1.5, Latency: 5ms
+2025-02-10 16:30:35 - ERROR - Job A1B2C3 failed after 433 seconds. Network: {'ipAddress': '192.168.1.1', 'port': 8080, 'protocol': 'HTTPS', 'latency': '20ms', 'bandwidth': '100Mbps'}
+2025-02-10 16:30:35 - DEBUG - Job A1B2C3: Checking network status - IP: 192.168.1.1, Latency: 20ms
+2025-02-10 16:30:35 - ERROR - Job G7H8I9 failed after 102 seconds. Network: {'ipAddress': '192.168.1.3', 'port': 22, 'protocol': 'SSH', 'latency': '10ms', 'bandwidth': '200Mbps'}
+2025-02-10 16:30:35 - DEBUG - Job G7H8I9: Checking network status - IP: 192.168.1.3, Latency: 10ms
+2025-02-10 16:30:35 - ERROR - Job A1B2C3 failed after 496 seconds. Network: {'ipAddress': '192.168.1.1', 'port': 8080, 'protocol': 'HTTPS', 'latency': '20ms', 'bandwidth': '100Mbps'}
+2025-02-10 16:30:35 - DEBUG - Job A1B2C3: Checking network status - IP: 192.168.1.1, Latency: 20ms
+2025-02-10 16:30:35 - INFO - Job G7H8I9 completed successfully in 146 seconds. Network: {'ipAddress': '192.168.1.3', 'port': 22, 'protocol': 'SSH', 'latency': '10ms', 'bandwidth': '200Mbps'}
+2025-02-10 16:30:35 - DEBUG - Job G7H8I9: Checking network status - IP: 192.168.1.3, Latency: 10ms
+2025-02-10 16:30:35 - ERROR - Job D4E5F6 failed after 411 seconds. Network: {'ipAddress': '192.168.1.2', 'port': 443, 'protocol': 'TCP', 'latency': '50ms', 'bandwidth': '50Mbps'}
+2025-02-10 16:30:35 - DEBUG - Job D4E5F6: Checking network status - IP: 192.168.1.2, Latency: 50ms
+2025-02-10 16:30:35 - INFO - Job A1B2C3 completed successfully in 128 seconds. Network: {'ipAddress': '192.168.1.1', 'port': 8080, 'protocol': 'HTTPS', 'latency': '20ms', 'bandwidth': '100Mbps'}
+2025-02-10 16:30:35 - DEBUG - Job A1B2C3: Checking network status - IP: 192.168.1.1, Latency: 20ms
+2025-02-10 16:30:35 - INFO - Job G7H8I9 completed successfully in 207 seconds. Network: {'ipAddress': '192.168.1.3', 'port': 22, 'protocol': 'SSH', 'latency': '10ms', 'bandwidth': '200Mbps'}
+2025-02-10 16:30:35 - DEBUG - Job G7H8I9: Checking network status - IP: 192.168.1.3, Latency: 10ms
+2025-02-10 16:30:35 - ERROR - Job D4E5F6 failed after 188 seconds. Network: {'ipAddress': '192.168.1.2', 'port': 443, 'protocol': 'TCP', 'latency': '50ms', 'bandwidth': '50Mbps'}
+2025-02-10 16:30:35 - DEBUG - Job D4E5F6: Checking network status - IP: 192.168.1.2, Latency: 50ms
+2025-02-10 16:30:35 - INFO - Job G7H8I9 completed successfully in 434 seconds. Network: {'ipAddress': '192.168.1.3', 'port': 22, 'protocol': 'SSH', 'latency': '10ms', 'bandwidth': '200Mbps'}
+2025-02-10 16:30:35 - DEBUG - Job G7H8I9: Checking network status - IP: 192.168.1.3, Latency: 10ms
+2025-02-10 16:30:35 - ERROR - Job J1K2L3 failed after 376 seconds. Network: {'ipAddress': '192.168.1.4', 'port': 3306, 'protocol': 'MySQL', 'latency': '30ms', 'bandwidth': '300Mbps'}
+2025-02-10 16:30:35 - DEBUG - Job J1K2L3: Checking network status - IP: 192.168.1.4, Latency: 30ms
+2025-02-10 16:30:35 - ERROR - Job M4N5O6 failed after 364 seconds. Network: {'ipAddress': '192.168.1.5', 'port': 53, 'protocol': 'DNS', 'latency': '5ms', 'bandwidth': '500Mbps'}
+2025-02-10 16:30:35 - DEBUG - Job M4N5O6: Checking network status - IP: 192.168.1.5, Latency: 5ms
+2025-02-10 16:30:35 - ERROR - Job J1K2L3 failed after 410 seconds. Network: {'ipAddress': '192.168.1.4', 'port': 3306, 'protocol': 'MySQL', 'latency': '30ms', 'bandwidth': '300Mbps'}
+2025-02-10 16:30:35 - DEBUG - Job J1K2L3: Checking network status - IP: 192.168.1.4, Latency: 30ms
+2025-02-10 16:30:35 - ERROR - Job A1B2C3 failed after 432 seconds. Network: {'ipAddress': '192.168.1.1', 'port': 8080, 'protocol': 'HTTPS', 'latency': '20ms', 'bandwidth': '100Mbps'}
+2025-02-10 16:30:35 - DEBUG - Job A1B2C3: Checking network status - IP: 192.168.1.1, Latency: 20ms
+2025-02-10 16:30:35 - INFO - Job G7H8I9 completed successfully in 265 seconds. Network: {'ipAddress': '192.168.1.3', 'port': 22, 'protocol': 'SSH', 'latency': '10ms', 'bandwidth': '200Mbps'}
+2025-02-10 16:30:35 - DEBUG - Job G7H8I9: Checking network status - IP: 192.168.1.3, Latency: 10ms
+2025-02-10 16:30:35 - INFO - Job D4E5F6 completed successfully in 132 seconds. Network: {'ipAddress': '192.168.1.2', 'port': 443, 'protocol': 'TCP', 'latency': '50ms', 'bandwidth': '50Mbps'}
+2025-02-10 16:30:35 - DEBUG - Job D4E5F6: Checking network status - IP: 192.168.1.2, Latency: 50ms
+2025-02-10 16:30:35 - INFO - Job D4E5F6 completed successfully in 282 seconds. Network: {'ipAddress': '192.168.1.2', 'port': 443, 'protocol': 'TCP', 'latency': '50ms', 'bandwidth': '50Mbps'}
+2025-02-10 16:30:35 - DEBUG - Job D4E5F6: Checking network status - IP: 192.168.1.2, Latency: 50ms
+2025-02-10 16:30:35 - ERROR - Job M4N5O6 failed after 436 seconds. Network: {'ipAddress': '192.168.1.5', 'port': 53, 'protocol': 'DNS', 'latency': '5ms', 'bandwidth': '500Mbps'}
+2025-02-10 16:30:35 - DEBUG - Job M4N5O6: Checking network status - IP: 192.168.1.5, Latency: 5ms
+2025-02-10 16:30:35 - ERROR - Job J1K2L3 failed after 390 seconds. Network: {'ipAddress': '192.168.1.4', 'port': 3306, 'protocol': 'MySQL', 'latency': '30ms', 'bandwidth': '300Mbps'}
+2025-02-10 16:30:35 - DEBUG - Job J1K2L3: Checking network status - IP: 192.168.1.4, Latency: 30ms
+2025-02-10 16:30:35 - INFO - Job D4E5F6 completed successfully in 186 seconds. Network: {'ipAddress': '192.168.1.2', 'port': 443, 'protocol': 'TCP', 'latency': '50ms', 'bandwidth': '50Mbps'}
+2025-02-10 16:30:35 - DEBUG - Job D4E5F6: Checking network status - IP: 192.168.1.2, Latency: 50ms
+2025-02-10 16:30:35 - INFO - Job D4E5F6 completed successfully in 181 seconds. Network: {'ipAddress': '192.168.1.2', 'port': 443, 'protocol': 'TCP', 'latency': '50ms', 'bandwidth': '50Mbps'}
+2025-02-10 16:30:35 - DEBUG - Job D4E5F6: Checking network status - IP: 192.168.1.2, Latency: 50ms
+2025-02-10 16:30:35 - ERROR - Job G7H8I9 failed after 152 seconds. Network: {'ipAddress': '192.168.1.3', 'port': 22, 'protocol': 'SSH', 'latency': '10ms', 'bandwidth': '200Mbps'}
+2025-02-10 16:30:35 - DEBUG - Job G7H8I9: Checking network status - IP: 192.168.1.3, Latency: 10ms
+2025-02-10 16:30:35 - ERROR - Job G7H8I9 failed after 441 seconds. Network: {'ipAddress': '192.168.1.3', 'port': 22, 'protocol': 'SSH', 'latency': '10ms', 'bandwidth': '200Mbps'}
+2025-02-10 16:30:35 - DEBUG - Job G7H8I9: Checking network status - IP: 192.168.1.3, Latency: 10ms
+2025-02-10 16:30:35 - ERROR - Job M4N5O6 failed after 273 seconds. Network: {'ipAddress': '192.168.1.5', 'port': 53, 'protocol': 'DNS', 'latency': '5ms', 'bandwidth': '500Mbps'}
+2025-02-10 16:30:35 - DEBUG - Job M4N5O6: Checking network status - IP: 192.168.1.5, Latency: 5ms
+2025-02-10 16:30:35 - INFO - Job J1K2L3 completed successfully in 375 seconds. Network: {'ipAddress': '192.168.1.4', 'port': 3306, 'protocol': 'MySQL', 'latency': '30ms', 'bandwidth': '300Mbps'}
+2025-02-10 16:30:36 - DEBUG - Job A1B2C3: Checking network status - IP: 192.168.1.1, Latency: 20ms
+2025-02-10 16:30:36 - ERROR - Job J1K2L3 failed after 350 seconds. Network: {'ipAddress': '192.168.1.4', 'port': 3306, 'protocol': 'MySQL', 'latency': '30ms', 'bandwidth': '300Mbps'}
+2025-02-10 16:30:36 - DEBUG - Job J1K2L3: Checking network status - IP: 192.168.1.4, Latency: 30ms
+2025-02-10 16:30:36 - INFO - Job D4E5F6 completed successfully in 490 seconds. Network: {'ipAddress': '192.168.1.2', 'port': 443, 'protocol': 'TCP', 'latency': '50ms', 'bandwidth': '50Mbps'}
+2025-02-10 16:30:36 - DEBUG - Job D4E5F6: Checking network status - IP: 192.168.1.2, Latency: 50ms
+2025-02-10 16:30:36 - ERROR - Job G7H8I9 failed after 486 seconds. Network: {'ipAddress': '192.168.1.3', 'port': 22, 'protocol': 'SSH', 'latency': '10ms', 'bandwidth': '200Mbps'}
+2025-02-10 16:30:36 - DEBUG - Job G7H8I9: Checking network status - IP: 192.168.1.3, Latency: 10ms
+2025-02-10 16:30:36 - ERROR - Job G7H8I9 failed after 258 seconds. Network: {'ipAddress': '192.168.1.3', 'port': 22, 'protocol': 'SSH', 'latency': '10ms', 'bandwidth': '200Mbps'}
+2025-02-10 16:30:36 - DEBUG - Job G7H8I9: Checking network status - IP: 192.168.1.3, Latency: 10ms
+2025-02-10 16:30:36 - INFO - Job M4N5O6 completed successfully in 206 seconds. Network: {'ipAddress': '192.168.1.5', 'port': 53, 'protocol': 'DNS', 'latency': '5ms', 'bandwidth': '500Mbps'}
+2025-02-10 16:30:36 - DEBUG - Job M4N5O6: Checking network status - IP: 192.168.1.5, Latency: 5ms
+2025-02-10 16:30:36 - INFO - Job M4N5O6 completed successfully in 288 seconds. Network: {'ipAddress': '192.168.1.5', 'port': 53, 'protocol': 'DNS', 'latency': '5ms', 'bandwidth': '500Mbps'}
+2025-02-10 16:30:36 - DEBUG - Job M4N5O6: Checking network status - IP: 192.168.1.5, Latency: 5ms
+2025-02-10 16:30:36 - INFO - Job M4N5O6 completed successfully in 363 seconds. Network: {'ipAddress': '192.168.1.5', 'port': 53, 'protocol': 'DNS', 'latency': '5ms', 'bandwidth': '500Mbps'}
+2025-02-10 16:30:36 - DEBUG - Job M4N5O6: Checking network status - IP: 192.168.1.5, Latency: 5ms
+2025-02-10 16:30:36 - INFO - Job J1K2L3 completed successfully in 441 seconds. Network: {'ipAddress': '192.168.1.4', 'port': 3306, 'protocol': 'MySQL', 'latency': '30ms', 'bandwidth': '300Mbps'}
+2025-02-10 16:30:36 - DEBUG - Job J1K2L3: Checking network status - IP: 192.168.1.4, Latency: 30ms
+2025-02-10 16:30:36 - ERROR - Job A1B2C3 failed after 199 seconds. Network: {'ipAddress': '192.168.1.1', 'port': 8080, 'protocol': 'HTTPS', 'latency': '20ms', 'bandwidth': '100Mbps'}
+2025-02-10 16:30:36 - DEBUG - Job A1B2C3: Checking network status - IP: 192.168.1.1, Latency: 20ms
+2025-02-10 16:30:36 - INFO - Job G7H8I9 completed successfully in 292 seconds. Network: {'ipAddress': '192.168.1.3', 'port': 22, 'protocol': 'SSH', 'latency': '10ms', 'bandwidth': '200Mbps'}
+2025-02-10 16:30:36 - DEBUG - Job G7H8I9: Checking network status - IP: 192.168.1.3, Latency: 10ms
+2025-02-10 16:30:36 - INFO - Job A1B2C3 completed successfully in 357 seconds. Network: {'ipAddress': '192.168.1.1', 'port': 8080, 'protocol': 'HTTPS', 'latency': '20ms', 'bandwidth': '100Mbps'}
+2025-02-10 16:30:36 - DEBUG - Job A1B2C3: Checking network status - IP: 192.168.1.1, Latency: 20ms
+2025-02-10 16:30:36 - INFO - Job J1K2L3 completed successfully in 342 seconds. Network: {'ipAddress': '192.168.1.4', 'port': 3306, 'protocol': 'MySQL', 'latency': '30ms', 'bandwidth': '300Mbps'}
+2025-02-10 16:30:36 - DEBUG - Job J1K2L3: Checking network status - IP: 192.168.1.4, Latency: 30ms
+2025-02-10 16:30:36 - INFO - Job M4N5O6 completed successfully in 119 seconds. Network: {'ipAddress': '192.168.1.5', 'port': 53, 'protocol': 'DNS', 'latency': '5ms', 'bandwidth': '500Mbps'}
+2025-02-10 16:30:36 - DEBUG - Job M4N5O6: Checking network status - IP: 192.168.1.5, Latency: 5ms
+2025-02-10 16:30:36 - ERROR - Job J1K2L3 failed after 114 seconds. Network: {'ipAddress': '192.168.1.4', 'port': 3306, 'protocol': 'MySQL', 'latency': '30ms', 'bandwidth': '300Mbps'}
+2025-02-10 16:30:36 - DEBUG - Job J1K2L3: Checking network status - IP: 192.168.1.4, Latency: 30ms
+2025-02-10 16:30:36 - INFO - Job A1B2C3 completed successfully in 345 seconds. Network: {'ipAddress': '192.168.1.1', 'port': 8080, 'protocol': 'HTTPS', 'latency': '20ms', 'bandwidth': '100Mbps'}
+2025-02-10 16:30:36 - DEBUG - Job A1B2C3: Checking network status - IP: 192.168.1.1, Latency: 20ms
+2025-02-10 16:30:36 - INFO - Job D4E5F6 completed successfully in 383 seconds. Network: {'ipAddress': '192.168.1.2', 'port': 443, 'protocol': 'TCP', 'latency': '50ms', 'bandwidth': '50Mbps'}
+2025-02-10 16:30:36 - DEBUG - Job D4E5F6: Checking network status - IP: 192.168.1.2, Latency: 50ms
+2025-02-10 16:30:36 - INFO - Job A1B2C3 completed successfully in 459 seconds. Network: {'ipAddress': '192.168.1.1', 'port': 8080, 'protocol': 'HTTPS', 'latency': '20ms', 'bandwidth': '100Mbps'}
+2025-02-10 16:30:36 - DEBUG - Job A1B2C3: Checking network status - IP: 192.168.1.1, Latency: 20ms
+2025-02-10 16:30:36 - INFO - Job M4N5O6 completed successfully in 130 seconds. Network: {'ipAddress': '192.168.1.5', 'port': 53, 'protocol': 'DNS', 'latency': '5ms', 'bandwidth': '500Mbps'}
+2025-02-10 16:30:36 - DEBUG - Job M4N5O6: Checking network status - IP: 192.168.1.5, Latency: 5ms
+2025-02-10 16:30:36 - ERROR - Job J1K2L3 failed after 444 seconds. Network: {'ipAddress': '192.168.1.4', 'port': 3306, 'protocol': 'MySQL', 'latency': '30ms', 'bandwidth': '300Mbps'}
+2025-02-10 16:30:36 - DEBUG - Job J1K2L3: Checking network status - IP: 192.168.1.4, Latency: 30ms
+2025-02-10 16:30:36 - INFO - Job D4E5F6 completed successfully in 219 seconds. Network: {'ipAddress': '192.168.1.2', 'port': 443, 'protocol': 'TCP', 'latency': '50ms', 'bandwidth': '50Mbps'}
+2025-02-10 16:30:36 - DEBUG - Job D4E5F6: Checking network status - IP: 192.168.1.2, Latency: 50ms
+2025-02-10 16:30:36 - ERROR - Job D4E5F6 failed after 340 seconds. Network: {'ipAddress': '192.168.1.2', 'port': 443, 'protocol': 'TCP', 'latency': '50ms', 'bandwidth': '50Mbps'}
+2025-02-10 16:30:36 - DEBUG - Job D4E5F6: Checking network status - IP: 192.168.1.2, Latency: 50ms
+2025-02-10 16:30:36 - INFO - Job M4N5O6 completed successfully in 375 seconds. Network: {'ipAddress': '192.168.1.5', 'port': 53, 'protocol': 'DNS', 'latency': '5ms', 'bandwidth': '500Mbps'}
+2025-02-10 16:30:36 - DEBUG - Job M4N5O6: Checking network status - IP: 192.168.1.5, Latency: 5ms
+2025-02-10 16:30:36 - INFO - Job A1B2C3 completed successfully in 470 seconds. Network: {'ipAddress': '192.168.1.1', 'port': 8080, 'protocol': 'HTTPS', 'latency': '20ms', 'bandwidth': '100Mbps'}
+2025-02-10 16:30:36 - DEBUG - Job A1B2C3: Checking network status - IP: 192.168.1.1, Latency: 20ms
+2025-02-10 16:30:36 - ERROR - Job J1K2L3 failed after 451 seconds. Network: {'ipAddress': '192.168.1.4', 'port': 3306, 'protocol': 'MySQL', 'latency': '30ms', 'bandwidth': '300Mbps'}
+2025-02-10 16:30:36 - DEBUG - Job J1K2L3: Checking network status - IP: 192.168.1.4, Latency: 30ms
+2025-02-10 16:30:36 - ERROR - Job J1K2L3 failed after 177 seconds. Network: {'ipAddress': '192.168.1.4', 'port': 3306, 'protocol': 'MySQL', 'latency': '30ms', 'bandwidth': '300Mbps'}
+2025-02-10 16:30:36 - DEBUG - Job J1K2L3: Checking network status - IP: 192.168.1.4, Latency: 30ms
+2025-02-10 16:30:36 - ERROR - Job D4E5F6 failed after 323 seconds. Network: {'ipAddress': '192.168.1.2', 'port': 443, 'protocol': 'TCP', 'latency': '50ms', 'bandwidth': '50Mbps'}
+2025-02-10 16:30:36 - DEBUG - Job D4E5F6: Checking network status - IP: 192.168.1.2, Latency: 50ms
+2025-02-10 16:30:36 - ERROR - Job J1K2L3 failed after 221 seconds. Network: {'ipAddress': '192.168.1.4', 'port': 3306, 'protocol': 'MySQL', 'latency': '30ms', 'bandwidth': '300Mbps'}
+2025-02-10 16:30:36 - DEBUG - Job J1K2L3: Checking network status - IP: 192.168.1.4, Latency: 30ms
+2025-02-10 16:30:36 - INFO - Job J1K2L3 completed successfully in 390 seconds. Network: {'ipAddress': '192.168.1.4', 'port': 3306, 'protocol': 'MySQL', 'latency': '30ms', 'bandwidth': '300Mbps'}
+2025-02-10 16:30:36 - DEBUG - Job J1K2L3: Checking network status - IP: 192.168.1.4, Latency: 30ms
+2025-02-10 16:30:36 - INFO - Job A1B2C3 completed successfully in 297 seconds. Network: {'ipAddress': '192.168.1.1', 'port': 8080, 'protocol': 'HTTPS', 'latency': '20ms', 'bandwidth': '100Mbps'}
+2025-02-10 16:30:36 - DEBUG - Job A1B2C3: Checking network status - IP: 192.168.1.1, Latency: 20ms
+2025-02-10 16:30:36 - INFO - Job D4E5F6 completed successfully in 253 seconds. Network: {'ipAddress': '192.168.1.2', 'port': 443, 'protocol': 'TCP', 'latency': '50ms', 'bandwidth': '50Mbps'}
+2025-02-10 16:30:36 - DEBUG - Job D4E5F6: Checking network status - IP: 192.168.1.2, Latency: 50ms
+2025-02-10 16:30:36 - ERROR - Job A1B2C3 failed after 181 seconds. Network: {'ipAddress': '192.168.1.1', 'port': 8080, 'protocol': 'HTTPS', 'latency': '20ms', 'bandwidth': '100Mbps'}
+2025-02-10 16:30:36 - DEBUG - Job A1B2C3: Checking network status - IP: 192.168.1.1, Latency: 20ms
+2025-02-10 16:30:36 - ERROR - Job G7H8I9 failed after 236 seconds. Network: {'ipAddress': '192.168.1.3', 'port': 22, 'protocol': 'SSH', 'latency': '10ms', 'bandwidth': '200Mbps'}
+2025-02-10 16:30:36 - DEBUG - Job G7H8I9: Checking network status - IP: 192.168.1.3, Latency: 10ms
+2025-02-10 16:30:36 - INFO - Job A1B2C3 completed successfully in 253 seconds. Network: {'ipAddress': '192.168.1.1', 'port': 8080, 'protocol': 'HTTPS', 'latency': '20ms', 'bandwidth': '100Mbps'}
+2025-02-10 16:30:36 - DEBUG - Job A1B2C3: Checking network status - IP: 192.168.1.1, Latency: 20ms
+2025-02-10 16:30:36 - ERROR - Job G7H8I9 failed after 398 seconds. Network: {'ipAddress': '192.168.1.3', 'port': 22, 'protocol': 'SSH', 'latency': '10ms', 'bandwidth': '200Mbps'}
+2025-02-10 16:30:36 - DEBUG - Job G7H8I9: Checking network status - IP: 192.168.1.3, Latency: 10ms
+2025-02-10 16:30:36 - INFO - Job M4N5O6 completed successfully in 369 seconds. Network: {'ipAddress': '192.168.1.5', 'port': 53, 'protocol': 'DNS', 'latency': '5ms', 'bandwidth': '500Mbps'}
+2025-02-10 16:30:36 - DEBUG - Job M4N5O6: Checking network status - IP: 192.168.1.5, Latency: 5ms
+2025-02-10 16:30:36 - ERROR - Job J1K2L3 failed after 298 seconds. Network: {'ipAddress': '192.168.1.4', 'port': 3306, 'protocol': 'MySQL', 'latency': '30ms', 'bandwidth': '300Mbps'}
+2025-02-10 16:30:36 - DEBUG - Job J1K2L3: Checking network status - IP: 192.168.1.4, Latency: 30ms
+2025-02-10 16:30:36 - INFO - Job G7H8I9 completed successfully in 377 seconds. Network: {'ipAddress': '192.168.1.3', 'port': 22, 'protocol': 'SSH', 'latency': '10ms', 'bandwidth': '200Mbps'}
+2025-02-10 16:30:36 - DEBUG - Job G7H8I9: Checking network status - IP: 192.168.1.3, Latency: 10ms
+2025-02-10 16:30:36 - ERROR - Job D4E5F6 failed after 434 seconds. Network: {'ipAddress': '192.168.1.2', 'port': 443, 'protocol': 'TCP', 'latency': '50ms', 'bandwidth': '50Mbps'}
+2025-02-10 16:30:36 - DEBUG - Job D4E5F6: Checking network status - IP: 192.168.1.2, Latency: 50ms
+2025-02-10 16:30:36 - ERROR - Job A1B2C3 failed after 118 seconds. Network: {'ipAddress': '192.168.1.1', 'port': 8080, 'protocol': 'HTTPS', 'latency': '20ms', 'bandwidth': '100Mbps'}
+2025-02-10 16:30:36 - DEBUG - Job A1B2C3: Checking network status - IP: 192.168.1.1, Latency: 20ms
+2025-02-10 16:30:36 - INFO - Job D4E5F6 completed successfully in 420 seconds. Network: {'ipAddress': '192.168.1.2', 'port': 443, 'protocol': 'TCP', 'latency': '50ms', 'bandwidth': '50Mbps'}
+2025-02-10 16:30:36 - DEBUG - Job D4E5F6: Checking network status - IP: 192.168.1.2, Latency: 50ms
+2025-02-10 16:30:36 - INFO - Job G7H8I9 completed successfully in 292 seconds. Network: {'ipAddress': '192.168.1.3', 'port': 22, 'protocol': 'SSH', 'latency': '10ms', 'bandwidth': '200Mbps'}
+2025-02-10 16:30:36 - DEBUG - Job G7H8I9: Checking network status - IP: 192.168.1.3, Latency: 10ms
+2025-02-10 16:30:36 - INFO - Job D4E5F6 completed successfully in 310 seconds. Network: {'ipAddress': '192.168.1.2', 'port': 443, 'protocol': 'TCP', 'latency': '50ms', 'bandwidth': '50Mbps'}
+2025-02-10 16:30:36 - DEBUG - Job D4E5F6: Checking network status - IP: 192.168.1.2, Latency: 50ms
+2025-02-10 16:30:36 - INFO - Job A1B2C3 completed successfully in 495 seconds. Network: {'ipAddress': '192.168.1.1', 'port': 8080, 'protocol': 'HTTPS', 'latency': '20ms', 'bandwidth': '100Mbps'}
+2025-02-10 16:30:36 - DEBUG - Job A1B2C3: Checking network status - IP: 192.168.1.1, Latency: 20ms
+2025-02-10 16:30:36 - INFO - Job D4E5F6 completed successfully in 147 seconds. Network: {'ipAddress': '192.168.1.2', 'port': 443, 'protocol': 'TCP', 'latency': '50ms', 'bandwidth': '50Mbps'}
+2025-02-10 16:30:36 - DEBUG - Job D4E5F6: Checking network status - IP: 192.168.1.2, Latency: 50ms
+2025-02-10 16:30:36 - INFO - Job M4N5O6 completed successfully in 198 seconds. Network: {'ipAddress': '192.168.1.5', 'port': 53, 'protocol': 'DNS', 'latency': '5ms', 'bandwidth': '500Mbps'}
+2025-02-10 16:30:36 - DEBUG - Job M4N5O6: Checking network status - IP: 192.168.1.5, Latency: 5ms
+2025-02-10 16:30:37 - INFO - Job G7H8I9 completed successfully in 197 seconds. Network: {'ipAddress': '192.168.1.3', 'port': 22, 'protocol': 'SSH', 'latency': '10ms', 'bandwidth': '200Mbps'}
+2025-02-10 16:30:37 - DEBUG - Job G7H8I9: Checking network status - IP: 192.168.1.3, Latency: 10ms
+2025-02-10 16:30:37 - ERROR - Job A1B2C3 failed after 316 seconds. Network: {'ipAddress': '192.168.1.1', 'port': 8080, 'protocol': 'HTTPS', 'latency': '20ms', 'bandwidth': '100Mbps'}
+2025-02-10 16:30:37 - DEBUG - Job A1B2C3: Checking network status - IP: 192.168.1.1, Latency: 20ms
+2025-02-10 16:30:37 - INFO - Job G7H8I9 completed successfully in 474 seconds. Network: {'ipAddress': '192.168.1.3', 'port': 22, 'protocol': 'SSH', 'latency': '10ms', 'bandwidth': '200Mbps'}
+2025-02-10 16:30:37 - DEBUG - Job G7H8I9: Checking network status - IP: 192.168.1.3, Latency: 10ms
+2025-02-10 16:30:37 - INFO - Job M4N5O6 completed successfully in 118 seconds. Network: {'ipAddress': '192.168.1.5', 'port': 53, 'protocol': 'DNS', 'latency': '5ms', 'bandwidth': '500Mbps'}
+2025-02-10 16:30:37 - DEBUG - Job M4N5O6: Checking network status - IP: 192.168.1.5, Latency: 5ms
+2025-02-10 16:30:37 - ERROR - Job J1K2L3 failed after 386 seconds. Network: {'ipAddress': '192.168.1.4', 'port': 3306, 'protocol': 'MySQL', 'latency': '30ms', 'bandwidth': '300Mbps'}
+2025-02-10 16:30:37 - DEBUG - Job J1K2L3: Checking network status - IP: 192.168.1.4, Latency: 30ms
+2025-02-10 16:30:37 - ERROR - Job J1K2L3 failed after 369 seconds. Network: {'ipAddress': '192.168.1.4', 'port': 3306, 'protocol': 'MySQL', 'latency': '30ms', 'bandwidth': '300Mbps'}
+2025-02-10 16:30:37 - DEBUG - Job J1K2L3: Checking network status - IP: 192.168.1.4, Latency: 30ms
+2025-02-10 16:30:37 - INFO - Job D4E5F6 completed successfully in 129 seconds. Network: {'ipAddress': '192.168.1.2', 'port': 443, 'protocol': 'TCP', 'latency': '50ms', 'bandwidth': '50Mbps'}
+2025-02-10 16:30:37 - DEBUG - Job D4E5F6: Checking network status - IP: 192.168.1.2, Latency: 50ms
+2025-02-10 16:30:37 - INFO - Job M4N5O6 completed successfully in 448 seconds. Network: {'ipAddress': '192.168.1.5', 'port': 53, 'protocol': 'DNS', 'latency': '5ms', 'bandwidth': '500Mbps'}
+2025-02-10 16:30:37 - DEBUG - Job M4N5O6: Checking network status - IP: 192.168.1.5, Latency: 5ms
+2025-02-10 16:30:37 - ERROR - Job D4E5F6 failed after 168 seconds. Network: {'ipAddress': '192.168.1.2', 'port': 443, 'protocol': 'TCP', 'latency': '50ms', 'bandwidth': '50Mbps'}
+2025-02-10 16:30:37 - DEBUG - Job D4E5F6: Checking network status - IP: 192.168.1.2, Latency: 50ms
+2025-02-10 16:30:37 - ERROR - Job G7H8I9 failed after 132 seconds. Network: {'ipAddress': '192.168.1.3', 'port': 22, 'protocol': 'SSH', 'latency': '10ms', 'bandwidth': '200Mbps'}
+2025-02-10 16:30:37 - DEBUG - Job G7H8I9: Checking network status - IP: 192.168.1.3, Latency: 10ms
+2025-02-10 16:30:37 - ERROR - Job A1B2C3 failed after 158 seconds. Network: {'ipAddress': '192.168.1.1', 'port': 8080, 'protocol': 'HTTPS', 'latency': '20ms', 'bandwidth': '100Mbps'}
+2025-02-10 16:30:37 - DEBUG - Job A1B2C3: Checking network status - IP: 192.168.1.1, Latency: 20ms
+2025-02-10 16:30:37 - INFO - Job J1K2L3 completed successfully in 393 seconds. Network: {'ipAddress': '192.168.1.4', 'port': 3306, 'protocol': 'MySQL', 'latency': '30ms', 'bandwidth': '300Mbps'}
+2025-02-10 16:30:37 - DEBUG - Job J1K2L3: Checking network status - IP: 192.168.1.4, Latency: 30ms
+2025-02-10 16:30:37 - ERROR - Job D4E5F6 failed after 203 seconds. Network: {'ipAddress': '192.168.1.2', 'port': 443, 'protocol': 'TCP', 'latency': '50ms', 'bandwidth': '50Mbps'}
+2025-02-10 16:30:37 - DEBUG - Job D4E5F6: Checking network status - IP: 192.168.1.2, Latency: 50ms
+2025-02-10 16:30:37 - INFO - Job J1K2L3 completed successfully in 402 seconds. Network: {'ipAddress': '192.168.1.4', 'port': 3306, 'protocol': 'MySQL', 'latency': '30ms', 'bandwidth': '300Mbps'}
+2025-02-10 16:30:37 - DEBUG - Job J1K2L3: Checking network status - IP: 192.168.1.4, Latency: 30ms
+2025-02-10 16:30:37 - ERROR - Job M4N5O6 failed after 447 seconds. Network: {'ipAddress': '192.168.1.5', 'port': 53, 'protocol': 'DNS', 'latency': '5ms', 'bandwidth': '500Mbps'}
+2025-02-10 16:30:37 - DEBUG - Job M4N5O6: Checking network status - IP: 192.168.1.5, Latency: 5ms
+2025-02-10 16:30:37 - ERROR - Job D4E5F6 failed after 284 seconds. Network: {'ipAddress': '192.168.1.2', 'port': 443, 'protocol': 'TCP', 'latency': '50ms', 'bandwidth': '50Mbps'}
+2025-02-10 16:30:37 - DEBUG - Job D4E5F6: Checking network status - IP: 192.168.1.2, Latency: 50ms
+2025-02-10 16:30:37 - ERROR - Job A1B2C3 failed after 479 seconds. Network: {'ipAddress': '192.168.1.1', 'port': 8080, 'protocol': 'HTTPS', 'latency': '20ms', 'bandwidth': '100Mbps'}
+2025-02-10 16:30:37 - DEBUG - Job A1B2C3: Checking network status - IP: 192.168.1.1, Latency: 20ms
+2025-02-10 16:30:37 - ERROR - Job D4E5F6 failed after 126 seconds. Network: {'ipAddress': '192.168.1.2', 'port': 443, 'protocol': 'TCP', 'latency': '50ms', 'bandwidth': '50Mbps'}
+2025-02-10 16:30:37 - DEBUG - Job D4E5F6: Checking network status - IP: 192.168.1.2, Latency: 50ms
+2025-02-10 16:30:37 - INFO - Job G7H8I9 completed successfully in 178 seconds. Network: {'ipAddress': '192.168.1.3', 'port': 22, 'protocol': 'SSH', 'latency': '10ms', 'bandwidth': '200Mbps'}
+2025-02-10 16:30:37 - DEBUG - Job G7H8I9: Checking network status - IP: 192.168.1.3, Latency: 10ms
+2025-02-10 16:30:37 - INFO - Job D4E5F6 completed successfully in 144 seconds. Network: {'ipAddress': '192.168.1.2', 'port': 443, 'protocol': 'TCP', 'latency': '50ms', 'bandwidth': '50Mbps'}
+2025-02-10 16:30:37 - DEBUG - Job D4E5F6: Checking network status - IP: 192.168.1.2, Latency: 50ms
+2025-02-10 16:30:37 - INFO - Job D4E5F6 completed successfully in 392 seconds. Network: {'ipAddress': '192.168.1.2', 'port': 443, 'protocol': 'TCP', 'latency': '50ms', 'bandwidth': '50Mbps'}
+2025-02-10 16:30:37 - DEBUG - Job D4E5F6: Checking network status - IP: 192.168.1.2, Latency: 50ms

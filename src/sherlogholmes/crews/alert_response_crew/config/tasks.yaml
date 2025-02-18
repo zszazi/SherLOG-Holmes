@@ -1,0 +1,18 @@
+analyze_impact_and_categorize_failure:
+  description: >
+    Analyze system logs to assess the impact of a failure. Based on the log data {log_data}, assign an impact score ranging from 0 to 100, 
+    and categorize the failure's impact into one of the following categories: high, medium, or low.
+    The categorization should be based on the severity and criticality of the failure as identified from the logs.
+  expected_output: >
+    A structured output containing the impact score (0–100) and the impact category (high, medium, or low).
+  agent: impact_assessor
+
+send_pagerduty_alert:
+  description: >
+    Based on the impact assessment provided by the "impact_assessor" agent, send out a PagerDuty alert to notify the relevant customers 
+    if the failure's impact is categorized as high or medium. Include the impact score, category, and mention that issue is being investigated.
+    Carry forward the justification from previous agent.
+    
+  expected_output: >
+    A successfully sent PagerDuty alert impact score, impact category and issue being investigated.
+  agent: pagerduty_alert_sender
