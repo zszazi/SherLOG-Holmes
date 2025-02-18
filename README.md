@@ -1,6 +1,6 @@
 # SherLOG Holmes
 
-16 Agents - 5 Crews with Tracing using LangTrace
+16 Agents - 5 Crews with Tracing using Langtrace
 
 #### CREWS
 1. Log Analysis Crew - Looks at different log fails (python, jobs, Network) and aggregates failures
@@ -18,8 +18,6 @@
 - `sev:high`
   - triggers `customer_communication` and `war_room` crews with Human Feedback 
 
-#### TRACING
-- Uses LangTrace to enable tracing and observability in Agents Workflows
 ---
 
 Results - `samples_results/`
@@ -62,3 +60,10 @@ LANGTRACE_API_KEY=93d....426...2f9
 SERPER_API_KEY=2e6....a..e
 OPENAI_API_KEY=sk....
 ```
+---
+
+#### TRACING
+- Uses Langtrace to enable tracing and observability in Agents Workflows
+
+![alt text](sample_results/langtrace1.png "langtrace")
+![alt text](sample_results/langtrace2.png "langtrace")
