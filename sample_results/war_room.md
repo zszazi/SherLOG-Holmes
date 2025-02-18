@@ -1,4 +1,3 @@
-```markdown
 # Aggregated Failure Logs Report
 
 **Report Generated on:** 2025-06-30  
