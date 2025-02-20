@@ -1,0 +1,70 @@
+{
+    "jobs": [
+      {
+        "jobId": "A1B2C3",
+        "jobStatus": "Success",
+        "jobRuntime": 120,
+        "jobStart": "2025-03-10T12:30:00Z",
+        "networkDetails": {
+          "ipAddress": "192.168.1.1",
+          "port": 8080,
+          "protocol": "HTTPS",
+          "latency": "20ms",
+          "bandwidth": "100Mbps"
+        }
+      },
+      {
+        "jobId": "D4E5F6",
+        "jobStatus": "Failure",
+        "jobRuntime": 300,
+        "jobStart": "2025-04-12T09:15:00Z",
+        "networkDetails": {
+          "ipAddress": "192.168.1.2",
+          "port": 443,
+          "protocol": "TCP",
+          "latency": "50ms",
+          "bandwidth": "50Mbps"
+        }
+      },
+      {
+        "jobId": "G7H8I9",
+        "jobStatus": "Success",
+        "jobRuntime": 180,
+        "jobStart": "2025-05-22T16:45:00Z",
+        "networkDetails": {
+          "ipAddress": "192.168.1.3",
+          "port": 22,
+          "protocol": "SSH",
+          "latency": "10ms",
+          "bandwidth": "200Mbps"
+        }
+      },
+      {
+        "jobId": "J1K2L3",
+        "jobStatus": "Failure",
+        "jobRuntime": 250,
+        "jobStart": "2025-06-30T14:00:00Z",
+        "networkDetails": {
+          "ipAddress": "192.168.1.4",
+          "port": 3306,
+          "protocol": "MySQL",
+          "latency": "30ms",
+          "bandwidth": "300Mbps"
+        }
+      },
+      {
+        "jobId": "M4N5O6",
+        "jobStatus": "Success",
+        "jobRuntime": 400,
+        "jobStart": "2025-07-14T10:10:00Z",
+        "networkDetails": {
+          "ipAddress": "192.168.1.5",
+          "port": 53,
+          "protocol": "DNS",
+          "latency": "5ms",
+          "bandwidth": "500Mbps"
+        }
+      }
+    ]
+  }
+  

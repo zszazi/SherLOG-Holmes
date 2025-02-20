@@ -18,6 +18,10 @@ class ReportingCrew:
     current_time = datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
     llm = ChatOpenAI(model="gpt-4o-mini")
 
+    def __init__(self, task_dir):
+        self.results = {}
+        self.task_dir = task_dir
+
     @agent
     def technical_rca_reporter(self) -> Agent:
         return Agent(
@@ -70,7 +74,7 @@ class ReportingCrew:
             config=self.tasks_config["generate_technical_report"],
             agent=self.technical_rca_reporter(),
             allow_code_execution=True,
-            output_file=f"results/technical-rca_{self.current_time}.md",
+            output_file=f"{self.task_dir}/technical-rca_{self.current_time}.md",
             context=[self.analyze_logs(), self.search_for_similar_failures()]
         )
 
@@ -80,7 +84,7 @@ class ReportingCrew:
         return Task(
             config=self.tasks_config["generate_non_technical_report"],
             agent=self.non_technical_rca_reporter(),
-            output_file=f"results/non-technical-rca_{self.current_time}.md",
+            output_file=f"{self.task_dir}/non-technical-rca_{self.current_time}.md",
             context=[self.analyze_logs(), self.search_for_similar_failures()]
         )
 

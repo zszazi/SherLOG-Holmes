@@ -2,6 +2,7 @@
 import datetime
 import json
 import os
+import uuid
 from random import randint
 
 from crewai.flow import Flow, and_, listen, or_, router, start
@@ -26,27 +27,29 @@ langtrace.init(api_key=os.getenv("LANGTRACE_API_KEY"),service_name ="sherLOGholm
 
 class SherLOGFlow(Flow[SherLOGState]):
 
+    def __init__(self, task_id: str = None):
+        # Initialize task_id if not passed
+        self.task_id = task_id or str(uuid.uuid4())
+        super().__init__()
+
     @start()
     def assemble_crews(self):
         print("Assembling Crews")
         os.makedirs("results", exist_ok=True)
+        self.state.task_id = self.task_id
+        self.state.task_dir = f"file_server/{self.task_id}"
         self.state.started_at = datetime.datetime.now()
 
     @listen(assemble_crews)
     def log_analysis(self):
-        resultjobs = (
-            AnalysisCrew().crew().kickoff(inputs={"jobid_result_json": "logs/jobsStatus.json", 
-                                                "py_logs" : "logs/py_job_logs.log", 
-                                                "dns_logs" : "logs/dns_job_logs.log"}) #TODO: All the inputs are overwritten at agent level for testing revert this later
-        )
+        resultjobs = AnalysisCrew(self.state.task_dir).crew().kickoff()
         print("LOG ANALYSIS RESULTS", resultjobs.raw)
         self.state.log_analysis = resultjobs.raw
         
-
     @listen(log_analysis)
     def impact_analysis(self):
         impact = (
-            AlertResponseCrew().crew().kickoff(inputs={"log_data": self.state.log_analysis})
+            AlertResponseCrew(self.state.task_dir).crew().kickoff(inputs={"log_data": self.state.log_analysis})
         )
         print("IMPACT ANALYSIS RESULTS", impact.raw)
         self.state.impact = impact.raw
@@ -62,7 +65,7 @@ class SherLOGFlow(Flow[SherLOGState]):
     @listen(log_analysis)
     def rca(self):
         rca = (
-            ReportingCrew().crew().kickoff(inputs={"log_data": self.state.log_analysis})
+            ReportingCrew(self.state.task_dir).crew().kickoff(inputs={"log_data": self.state.log_analysis})
         )
         print("RCA RESULTS", rca.raw)
         self.state.rca = rca.raw
@@ -73,7 +76,7 @@ class SherLOGFlow(Flow[SherLOGState]):
 
     @listen(and_("sev:high", rca))
     def cust_comm(self):
-        cust_comm = CustomerCommunicationCrew().crew().kickoff(inputs={"rca_analysis": self.state.rca})
+        cust_comm = CustomerCommunicationCrew(self.state.task_dir).crew().kickoff(inputs={"rca_analysis": self.state.rca})
         print("CUSTOMER RESULTS", cust_comm.raw)
         self.state.cust_comm = cust_comm.raw
 
@@ -81,7 +84,7 @@ class SherLOGFlow(Flow[SherLOGState]):
     @listen("sev:high")
     def war_room(self):
         war_room = (
-            WarRoomCrew().crew().kickoff(inputs={"log_data": self.state.log_analysis, "impact_analysis": self.state.impact})
+            WarRoomCrew(self.state.task_dir).crew().kickoff(inputs={"log_data": self.state.log_analysis, "impact_analysis": self.state.impact})
         )
         print("WAR ROOM RESULTS", war_room.raw)
         self.state.war_room = war_room.raw
@@ -89,7 +92,7 @@ class SherLOGFlow(Flow[SherLOGState]):
 
     @listen(or_(and_(cust_comm, war_room),low_sev))
     def teardown(self):
-        file_path = "results/crew_results.json"
+        file_path = f"{self.state.task_dir}/crew_results.json"
 
         try:
             if hasattr(self.state, "dict"):
@@ -109,8 +112,23 @@ class SherLOGFlow(Flow[SherLOGState]):
         
 def kickoff():
     sherlog_flow = SherLOGFlow()
-    sherlog_flow.kickoff()
+    sherlog_flow.kickoff(inputs={"jobid_result_json": "logs/jobsStatus.json", 
+                                                "py_logs" : "logs/py_job_logs.log", 
+                                                "dns_logs" : "logs/dns_job_logs.log"})
 
+def kickoff_async():
+    sherlog_flow = SherLOGFlow()
+    sherlog_flow.kickoff_async(inputs={"jobid_result_json": "logs/jobsStatus.json", 
+                                                "py_logs" : "logs/py_job_logs.log", 
+                                                "dns_logs" : "logs/dns_job_logs.log"})
+
+async def kickoff_api(task_id):
+    sherlog_flow = SherLOGFlow(task_id)
+    print(f"kicking off flow with TASK-ID {task_id}")
+    await sherlog_flow.kickoff_async(inputs={"jobid_result_json": f"{task_id}/jobsStatus.json", 
+                                 "py_logs" : f"{task_id}/py_job_logs.log", 
+                                 "dns_logs" : f"{task_id}/dns_job_logs.log"})
+    
 
 def plot():
     sherlog_flow = SherLOGFlow()
@@ -120,8 +138,3 @@ def plot():
 if __name__ == "__main__":
     plot()
     kickoff()
-
-
-
-
-

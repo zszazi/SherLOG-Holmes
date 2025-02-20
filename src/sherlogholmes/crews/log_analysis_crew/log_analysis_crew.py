@@ -15,18 +15,19 @@ class AnalysisCrew:
     
     llm = ChatOpenAI(model="gpt-4o-mini")
 
-    def __init__(self):
+    def __init__(self, task_dir):
         self.results = {}
+        self.task_dir = task_dir
 
     def store_output(self, task_name: str, output):
         self.results[task_name] = output
 
     @agent
     def job_extractor(self) -> Agent:
-        search_tool = FileReadTool("logs/jobsStatus.json")
+        file_read_tool = FileReadTool(f"{self.task_dir}/jobsStatus.json")
         return Agent(
             config=self.agents_config["job_extractor"],
-            tools=[search_tool],
+            tools=[file_read_tool],
             llm=self.llm,
             verbose=True,
             allow_delegation=False,
@@ -35,11 +36,11 @@ class AnalysisCrew:
 
     @agent
     def py_log_parser(self) -> Agent:
-        file_read_tool = FileReadTool("logs/py_job_logs.log")
+        file_read_tool = FileReadTool(f"{self.task_dir}/py_job_logs.log")
         return Agent(
             config=self.agents_config["py_log_parser"],
-            llm=self.llm,
             tools=[file_read_tool],
+            llm=self.llm,
             verbose=True,
             allow_delegation=False,
             max_iter=2
@@ -47,11 +48,11 @@ class AnalysisCrew:
     
     @agent
     def dns_log_parser(self) -> Agent:
-        file_read_tool = FileReadTool("logs/dns_job_logs.log")
+        file_read_tool = FileReadTool(f"{self.task_dir}/dns_job_logs.log")
         return Agent(
             config=self.agents_config["dns_log_parser"],
-            llm=self.llm,
             tools=[file_read_tool],
+            llm=self.llm,
             verbose=True,
             allow_delegation=False,
             max_iter=2
@@ -112,7 +113,7 @@ class AnalysisCrew:
         context=[self.extract_failed_jobs(), self.analyze_python_logs(), self.analyze_dns_logs()],
         execution=lambda ctx: self.aggregate_results(ctx), 
         agent=self.aggregator(),
-        output_file="results/failure_logs.md"
+        output_file=f"{self.task_dir}/failure_logs.md"
         )
     
     @crew

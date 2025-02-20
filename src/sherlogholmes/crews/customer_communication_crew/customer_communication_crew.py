@@ -17,8 +17,9 @@ class CustomerCommunicationCrew:
     
     llm = ChatOpenAI(model="gpt-4o-mini") 
 
-    def __init__(self):
+    def __init__(self, task_dir):
         self.results = {}
+        self.task_dir = task_dir
 
     def store_output(self, task_name: str, output):
         self.results[task_name] = output
@@ -48,7 +49,7 @@ class CustomerCommunicationCrew:
             config=self.tasks_config["draft_customer_email"],
             agent=self.customer_support_agent(),
             callback=lambda output: self.store_output("customer_email", output),
-            output_file="results/customer_email.md"
+            output_file=f"{self.task_dir}/customer_email.md"
         )
 
     @task
@@ -57,7 +58,7 @@ class CustomerCommunicationCrew:
             config=self.tasks_config["customer_faq_document"],
             agent=self.customer_support_agent(),
             callback=lambda output: self.store_output("customer_faq_document", output),
-            output_file="results/customer_faq.md"
+            output_file=f"{self.task_dir}/customer_faq.md"
         )
     
     @task

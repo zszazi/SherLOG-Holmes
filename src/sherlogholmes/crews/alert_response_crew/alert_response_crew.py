@@ -15,6 +15,10 @@ class AlertResponseCrew:
 
     llm = ChatOpenAI(model="gpt-4o-mini")
 
+    def __init__(self, task_dir):
+        self.results = {}
+        self.task_dir = task_dir
+
     @agent
     def impact_assessor(self) -> Agent:
         return Agent(

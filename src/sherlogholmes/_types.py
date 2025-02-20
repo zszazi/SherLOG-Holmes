@@ -36,6 +36,8 @@ class SherLOGState(BaseModel):
     rca: Optional[str] = None
     war_room: Optional[str] = None
     cust_comm: Optional[str] = None
+    task_id: Optional[str] = None
+    task_dir: Optional[str] = None
 
 #alert response crew 
 class ImpactScore(BaseModel):

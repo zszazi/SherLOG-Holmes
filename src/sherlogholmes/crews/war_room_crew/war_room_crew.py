@@ -26,11 +26,11 @@ class WarRoomCrew:
     wiki_source = TextFileKnowledgeSource(
     file_paths=["wiki/architecture.txt", "wiki/network.txt"]
 )
-    def __init__(self):
-        self.results = {} 
+    def __init__(self, task_dir):
+        self.results = {}
+        self.task_dir = task_dir
 
     def store_output(self, task_name: str, output):
-    
         self.results[task_name] = output
 
     @agent
@@ -91,7 +91,7 @@ class WarRoomCrew:
             agent=self.senior_backend_engineer(),
             callback=lambda output: self.store_output("backend_issue_analysis", output),
             expected_output="A markdown file of backend engineer analysis",
-            output_file="results/backend_engineer.md"
+            output_file=f"{self.task_dir}/backend_engineer.md"
         )
 
     @task
@@ -101,7 +101,7 @@ class WarRoomCrew:
             agent=self.senior_network_engineer(),
             callback=lambda output: self.store_output("network_issue_analysis", output),
             expected_output="A markdown file of network engineer analysis",
-            output_file="results/network_engineer.md"
+            output_file=f"{self.task_dir}/network_engineer.md"
         )
 
     @task
@@ -143,7 +143,7 @@ class WarRoomCrew:
         return Task(
         description="Aggregate all collected results into a single report.",
         expected_output="A combined report of all failure logs in form of markdown",
-        output_file="results/war_room.md",
+        output_file=f"{self.task_dir}/war_room.md",
         context=[self.backend_issue_analysis(), self.network_issue_analysis(), self.architectural_review(),self.business_impact_analysis(), self.war_room_action_plan()],
         agent=self.aggregator()
         )
