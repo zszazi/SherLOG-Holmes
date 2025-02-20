@@ -1,6 +1,8 @@
 # SherLOG Holmes
 
-16 Agents - 5 Crews with Tracing using Langtrace
+16 Agents - 5 Crews with Tracing using Langtrace with API support
+
+Kickoff CrewAI flows through API 
 
 #### CREWS
 1. Log Analysis Crew - Looks at different log fails (python, jobs, Network) and aggregates failures
@@ -20,7 +22,17 @@
 
 ---
 
-Results - `samples_results/`
+#### FastAPI - Kickoff flow through API 
+
+`fastapi run api/app.py`
+
+swagger at `http://localhost:8000/docs` 
+
+With each API call, a `task_id` is assigned, and user uploaded logs are persisted at `file_server/{task_id}`, the flow is kicked-off async and all the associated results from various crews are also dumped at `file_server/{task_id}`
+
+---
+
+Sample Results - `samples_results/`
 
 Logs - `logs/`
 
@@ -67,3 +79,5 @@ OPENAI_API_KEY=sk....
 
 ![alt text](sample_results/langtrace1.png "langtrace")
 ![alt text](sample_results/langtrace2.png "langtrace")
+
+
